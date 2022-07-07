@@ -1,0 +1,250 @@
+\documentclass[10pt,letterpaper]{report}
+\usepackage{lipsum} 
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,mexico]{babel}
+\usepackage{graphicx}
+\usepackage[top=1.85in,bottom=1.7in,right=.75in,left=.75in,headheight=70pt,headsep=1cm,,footskip=90pt]{geometry}
+\usepackage{chngcntr}
+\counterwithout{table}{chapter}
+\counterwithout{figure}{chapter}
+%uso de tablas multicolumnas y color
+\usepackage{multicol}
+\usepackage{booktabs}
+\usepackage{colortbl}
+\usepackage{lscape}
+
+%Uso de Referencias con bibtex
+
+\usepackage[backend=bibtex]{biblatex}
+\addbibresource{referencias.bib}
+
+
+\begin{document}
+	% Haciendo la portada
+	\begin{titlepage}
+		\centering
+		\includegraphics[width=.7\textwidth]{Imagenes/Logo.png}\par\vspace{1cm}
+		{\scshape\LARGE \bfseries Universidad Autónoma de Zacatecas \par 
+        ``Francisco García Salinas''\par }
+		\vspace{1cm}
+		%{\scshape\Large Doctorado en Ingeniería para la Innovación Tecnológica\par}
+        {\scshape\Large Maestría en Ingeniería para la Innovación Tecnológica\par}
+		\vspace{1.5cm}
+		{\huge\bfseries Título de anteproyecto de tesis\par}
+		\vspace{2cm}
+		{\Large\itshape Nombre del Alumno\par}
+		\vfill
+		Director de tesis :\par
+		Asesor 1\par
+				
+		\vfill
+		
+		% Bottom of the page
+		{\large Zacatecas, Zacatecas a \today\par}
+	\end{titlepage}
+
+	% Resumen
+\section*{Resumen}
+
+\lipsum[1-3]
+
+\tableofcontents
+	
+\chapter{Introducción}
+
+\lipsum[1-3]
+
+\chapter{Estado del Arte}
+
+\lipsum[1-6] \cite{Ellinidou2019}.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.80\textwidth]{Figuras/territorio.jpg}\par\vspace{1cm}
+	\caption{Ubicación de habitat del Panda Rojo en el mundo}
+	\label{ubicacion}
+\end{figure}	
+
+\chapter{Planteamiento del Problema}
+
+\lipsum[1-6]
+
+\section{Objetivo General}
+\lipsum[1]
+\section{Objetivos Particulares}
+\begin{itemize}
+    \item \lipsum[1]
+    \item \lipsum[1]
+\end{itemize}
+
+\chapter{Metodología}
+
+\lipsum[1-4]
+
+\chapter{Cronograma de Actividades}
+
+\lipsum[1-3]
+
+\pagebreak
+
+\begin{landscape}
+\centering
+ 	\begin{table}[htbp]
+		\centering
+		\caption{Cronograma de Actividades Programa de Maestría}
+		\scalebox{0.8}{\begin{tabular}{|r|l|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|}
+			\toprule
+			\rowcolor[rgb]{ .188,  .329,  .588} \textcolor[rgb]{ 1,  1,  1}{} & \textcolor[rgb]{ 1,  1,  1}{} & \multicolumn{12}{c|}{\textcolor[rgb]{ 1,  1,  1}{2022}}                                       & \multicolumn{12}{c|}{\textcolor[rgb]{ 1,  1,  1}{2023}} \\
+			\midrule
+			\rowcolor[rgb]{ .188,  .329,  .588} \textcolor[rgb]{ 1,  1,  1}{} & \textcolor[rgb]{ 1,  1,  1}{Actividad} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Ene}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Feb}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Mar}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Abr}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{May}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Jun}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Jul}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Ago}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Sep}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Oct}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Nov}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Dic}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Ene}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Feb}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Mar}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Abr}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{May}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Jun}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Jul}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Ago}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Sep}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Oct}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Nov}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Dic}} \\
+			\midrule
+			1     & Actividad 1 & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &  \\
+			\midrule
+			2     & Actividad 2 &       &       &       & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &  \\
+			\midrule
+			3     & Actividad 3 & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &  \\
+			\midrule
+			4     & Actividad 4 &       &       &       &       &       &       &       & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} &       &       &       &       &       &       &       &       &       &       &       &  \\
+			\midrule
+			5     & Actividad 5 &       &       &       &       &       &       &       & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} &       &       &       &       &       &       &       &       &       &       &       &  \\
+			\midrule
+			6     & Actividad 6 &       &       &       &       &       &       &       &       &       &       &       &       & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} &       &       &       &       &       &       &       &  \\
+			\midrule
+			7     & Actividad 7 &       &       &       &       &       &       &       &       &       &       &       &       &       & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} &       &       &       &       &       &  \\
+			\midrule
+			8     & Actividad 8 &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} &       &  \\
+			\midrule
+			9     & Actividad 9 &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &  \\
+			\midrule
+			10    & Actividad 10 &       &       &       &       &       & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} &       &       &       &       &       &       &       &       &       &       &       &       &       &       &  \\
+			\midrule
+			11    & Actividad 11 &       &       &       &       &       &       &       &       &       &       & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} &       &       &       &       &       &       &       &       &       &  \\
+			\midrule
+			12    & Actividad 12 &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &  \\
+			\midrule
+			13    & Actividad 13 &       &       &       &       &       &       &       &       &       &       &       &       &       &       & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} &       &       &       &       &  \\
+			\midrule
+			14    & Actividad 14 &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} &  \\
+			\midrule
+			15    & Actividad 15 &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} \\
+			\midrule
+			16    & Actividad 16 &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} \\
+			\bottomrule
+		\end{tabular}}%
+		\label{tab:tab1}%
+	\end{table}%
+\pagebreak
+\begin{table}[htbp]
+	\centering
+	\caption{Cronograma de Actividades Programa de Maestría primeros 2 años}
+	\scalebox{0.8}{\begin{tabular}{|r|l|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|}
+			\toprule
+			\rowcolor[rgb]{ .188,  .329,  .588} \textcolor[rgb]{ 1,  1,  1}{} & \textcolor[rgb]{ 1,  1,  1}{} & \multicolumn{12}{c|}{\textcolor[rgb]{ 1,  1,  1}{2022}}                                       & \multicolumn{12}{c|}{\textcolor[rgb]{ 1,  1,  1}{2023}} \\
+			\midrule
+			\rowcolor[rgb]{ .188,  .329,  .588} \textcolor[rgb]{ 1,  1,  1}{} & \textcolor[rgb]{ 1,  1,  1}{Actividad} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Ene}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Feb}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Mar}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Abr}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{May}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Jun}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Jul}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Ago}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Sep}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Oct}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Nov}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Dic}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Ene}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Feb}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Mar}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Abr}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{May}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Jun}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Jul}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Ago}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Sep}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Oct}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Nov}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Dic}} \\
+			\midrule
+			1     & Actividad 1 & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &  \\
+			\midrule
+			2     & Actividad 2 &       &       &       & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &  \\
+			\midrule
+			3     & Actividad 3 & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &  \\
+			\midrule
+			4     & Actividad 4 &       &       &       &       &       &       &       & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} &       &       &       &       &       &       &       &       &       &       &       &  \\
+			\midrule
+			5     & Actividad 5 &       &       &       &       &       &       &       & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} &       &       &       &       &       &       &       &       &       &       &       &  \\
+			\midrule
+			6     & Actividad 6 &       &       &       &       &       &       &       &       &       &       &       &       & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} &       &       &       &       &       &       &       &  \\
+			\midrule
+			7     & Actividad 7 &       &       &       &       &       &       &       &       &       &       &       &       &       & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} &       &       &       &       &       &  \\
+			\midrule
+			8     & Actividad 8 &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} &       &  \\
+			\midrule
+			9     & Actividad 9 &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &  \\
+			\midrule
+			10    & Actividad 10 &       &       &       &       &       & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} &       &       &       &       &       &       &       &       &       &       &       &       &       &       &  \\
+			\midrule
+			11    & Actividad 11 &       &       &       &       &       &       &       &       &       &       & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} &       &       &       &       &       &       &       &       &       &  \\
+			\midrule
+			12    & Actividad 12 &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &  \\
+			\midrule
+			13    & Actividad 13 &       &       &       &       &       &       &       &       &       &       &       &       &       &       & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} &       &       &       &       &  \\
+			\midrule
+			14    & Actividad 14 &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} &  \\
+			\midrule
+			15    & Actividad 15 &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} \\
+			\midrule
+			16    & Actividad 16 &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} \\
+			\bottomrule
+	\end{tabular}}%
+	\label{tab:tab2}%
+\end{table}%
+
+\pagebreak
+	
+\begin{table}[htbp]
+    \centering
+    \caption{Cronograma de Actividades Programa de Maestría siguientes 2 años}
+    \scalebox{0.8}{\begin{tabular}{|r|l|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|}
+            \toprule
+            \rowcolor[rgb]{ .188,  .329,  .588} \textcolor[rgb]{ 1,  1,  1}{} & \textcolor[rgb]{ 1,  1,  1}{} & \multicolumn{12}{c|}{\textcolor[rgb]{ 1,  1,  1}{2024}}                                       & \multicolumn{12}{c|}{\textcolor[rgb]{ 1,  1,  1}{2025}} \\
+            \midrule
+            \rowcolor[rgb]{ .188,  .329,  .588} \textcolor[rgb]{ 1,  1,  1}{} & \textcolor[rgb]{ 1,  1,  1}{Actividad} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Ene}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Feb}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Mar}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Abr}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{May}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Jun}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Jul}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Ago}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Sep}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Oct}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Nov}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Dic}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Ene}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Feb}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Mar}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Abr}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{May}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Jun}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Jul}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Ago}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Sep}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Oct}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Nov}} & \multicolumn{1}{l|}{\textcolor[rgb]{ 1,  1,  1}{Dic}} \\
+            \midrule
+            1     & Actividad 1 & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &  \\
+            \midrule
+            2     & Actividad 2 &       &       &       & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &  \\
+            \midrule
+            3     & Actividad 3 & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &  \\
+            \midrule
+            4     & Actividad 4 &       &       &       &       &       &       &       & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} &       &       &       &       &       &       &       &       &       &       &       &  \\
+            \midrule
+            5     & Actividad 5 &       &       &       &       &       &       &       & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} &       &       &       &       &       &       &       &       &       &       &       &  \\
+            \midrule
+            6     & Actividad 6 &       &       &       &       &       &       &       &       &       &       &       &       & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} &       &       &       &       &       &       &       &  \\
+            \midrule
+            7     & Actividad 7 &       &       &       &       &       &       &       &       &       &       &       &       &       & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} &       &       &       &       &       &  \\
+            \midrule
+            8     & Actividad 8 &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} &       &  \\
+            \midrule
+            9     & Actividad 9 &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &  \\
+            \midrule
+            10    & Actividad 10 &       &       &       &       &       & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} &       &       &       &       &       &       &       &       &       &       &       &       &       &       &  \\
+            \midrule
+            11    & Actividad 11 &       &       &       &       &       &       &       &       &       &       & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} &       &       &       &       &       &       &       &       &       &  \\
+            \midrule
+            12    & Actividad 12 &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &  \\
+            \midrule
+            13    & Actividad 13 &       &       &       &       &       &       &       &       &       &       &       &       &       &       & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} &       &       &       &       &  \\
+            \midrule
+            14    & Actividad 14 &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} &  \\
+            \midrule
+            15    & Actividad 15 &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} \\
+            \midrule
+            16    & Actividad 16 &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       &       & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} & \cellcolor[rgb]{ .557,  .663,  .859} \\
+            \bottomrule
+    \end{tabular}}%
+    \label{tab:tab3}%
+\end{table}%
+
+\end{landscape}
+
+\chapter*{Comité Propuesto}
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{lc}
+        \toprule
+        & Nombre \\
+        \midrule
+        Director &  Nombre de director\\
+        Co-director &  Nombre de co-director\\
+        Miembro 1 &  Nombre de Miembro 1\\
+        Miembro 2 &  Nombre de Miembro 2\\
+        Miembro 3 &  Nombre de Miembro 3\\
+        \bottomrule
+    \end{tabular}%
+\end{table}%
+
+\printbibliography[title={Referencias}]
+
+
+\end{document}
