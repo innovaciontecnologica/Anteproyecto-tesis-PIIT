@@ -1,0 +1,64 @@
+La sección de cronograma dentro de un proyecto de tesis o anteproyecto tiene como propósito detallar de manera organizada y temporal las actividades que el estudiante llevará a cabo durante el desarrollo del trabajo de investigación. Esta sección permite visualizar el avance progresivo del proyecto, establecer metas por periodos y facilitar el seguimiento del cumplimiento de cada etapa.
+
+\textbf{¿Qué debe incluir esta sección?}
+\begin{enumerate}
+  \item Actividades clave: Listado de las tareas fundamentales, como revisión de literatura, formulación del problema, diseño metodológico, recolección de datos, análisis de resultados, redacción de la tesis y defensa.
+  \item Duración estimada: Tiempo que tomará cada actividad, generalmente expresado en semanas o meses.
+  \item Distribución temporal: Ubicación de cada actividad dentro del calendario académico (semestres, trimestres, etc.).
+  \item Representación visual (opcional pero recomendable): Un diagrama de Gantt o tabla cronológica para mostrar con claridad cuándo inicia y finaliza cada tarea.
+\end{enumerate}
+
+\textbf{Función dentro del proyecto}:
+
+\begin{itemize}
+  \item Organiza y jerarquiza las actividades.
+  \item Ayuda a prever tiempos y recursos.
+  \item Permite el seguimiento y evaluación por parte del director o comité académico.
+  \item Fortalece la viabilidad del proyecto al demostrar una planificación realista.
+\end{itemize}
+
+Extensión sugerida: entre media cuartilla y una cuartilla, con tabla o gráfico incluido.
+
+\begin{ganttchart}[
+    hgrid,
+    vgrid,
+    time slot format=isodate-yearmonth,
+    time slot unit=month,
+    x unit=1.2cm,
+    y unit chart=0.7cm,
+    bar label font=\small\color{black},
+    bar height=0.5
+  ]{2025-08}{2025-12}
+  
+  % Semestre 1
+  \gantttitle{Semestre 1}{5} \\
+  \gantttitlecalendar{year, month=shortname} \\
+  \ganttbar{Revisión de literatura}{2025-08}{2025-09} \\
+  \ganttbar{Redacción del protocolo}{2025-09}{2025-10} \\
+  \ganttbar{Justificación y marco teórico}{2025-10}{2025-11} \\
+  \ganttbar{Diseño metodológico}{2025-11}{2025-12} \\
+  \ganttbar{Revisión por comité académico}{2025-12}{2025-12} \\
+  \ganttmilestone{Avance de tesis}{2025-12} \\
+\end{ganttchart}
+
+\vspace{1.5cm}
+
+\begin{ganttchart}[
+    hgrid,
+    vgrid,
+    time slot format=isodate-yearmonth,
+    time slot unit=month,
+    x unit=1.2cm,
+    y unit chart=0.7cm,
+    bar label font=\small\color{black},
+    bar height=0.5
+  ]{2026-01}{2026-07}
+  % Semestre 2
+  \gantttitle{Semestre 2}{7} \\
+  \gantttitlecalendar{year, month=shortname} \\
+  \ganttbar{Implementación técnica}{2026-01}{2026-03} \\
+  \ganttbar{Análisis de resultados}{2026-03}{2026-04} \\
+  \ganttbar{Redacción de tesis final}{2026-04}{2026-05} \\
+  \ganttbar{Revisión por comité de tesis}{2026-05}{2026-07} \\
+  \ganttmilestone{Defensa de tesis}{2026-07}
+\end{ganttchart}

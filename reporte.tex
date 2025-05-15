@@ -2,7 +2,7 @@
 \usepackage{lipsum} 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[spanish,mexico]{babel}
+\usepackage[spanish]{babel}
 \usepackage{graphicx}
 \usepackage[top=1.85in,bottom=1.7in,right=.75in,left=.75in,headheight=70pt,headsep=1cm,,footskip=90pt]{geometry}
 \usepackage{chngcntr}
@@ -13,18 +13,29 @@
 \usepackage{booktabs}
 \usepackage{colortbl}
 \usepackage{lscape}
+\usepackage{longtable}
+\usepackage{pgfgantt}
+\usepackage{csquotes}
+\usepackage[spanish]{translator}
+\def\pgfcalendarmonthshortname#1{%
+  \ifcase#1\or Ene\or Feb\or Mar\or Abr\or
+    May\or Jun\or Jul\or Ago\or Sep\or Oct\or
+    Nov\or Dic\fi
+}%
 
 %Uso de Referencias con bibtex
 
-\usepackage[backend=bibtex]{biblatex}
+\usepackage[
+backend=biber,
+style=numeric-comp,
+]{biblatex}
 \addbibresource{referencias.bib}
-
 
 \begin{document}
 	% Haciendo la portada
 	\begin{titlepage}
 		\centering
-		\includegraphics[width=.7\textwidth]{Imagenes/Logo.png}\par\vspace{1cm}
+		\includegraphics[width=.7\textwidth]{Imagenes/Logo}\par\vspace{1cm}
 		{\scshape\LARGE \bfseries Universidad Autónoma de Zacatecas \par 
         ``Francisco García Salinas''\par }
 		\vspace{1cm}
@@ -49,39 +60,27 @@
 \input{01_Resumen}          
 
 \tableofcontents
-	
+\chapter{Registro SECIHTI}
+\input{02_Registro-SECIHTI}
 \chapter{Antecedentes}
-\input{02_Antecedentes}
+\input{03_Antecedentes}
 \chapter{Descripción del problema a investigar}
-\input{03_Descripción-del-problema}
+\input{04_Descripción-del-problema}
 \chapter{Justificación y relevancia}
-\input{04_Justificación-y-relevancia}
-\chapter{Impacto científico}
-\input{05_Impacto-cientifico}
-\chapter{Impacto social}
-\input{06_Impacto-social}
-\chapter{Aportaciones a la solución de problemas prioritarios}
-\input{07_Aportaciones}
-\chapter{Estrategias para el acceso universal del conocimiento}
-\input{08_Estrategias}
+\input{05_Justificación-y-relevancia}
 \chapter{Objetivos}
-\input{09_Objetivos}
+\input{06_Objetivos}
 \chapter{Marco Teórico}
-\input{10_Marco-Teorico}
+\input{07_Marco-Teorico}
 \chapter{Metodología}
-\input{11_Metodologia}
+\input{08_Metodologia}
 \chapter{Descripción de los procedimientos a realizar}
-\input{12_Descripción-de-los-procedimientos}
+\input{09_Descripción-de-los-procedimientos}
 \chapter{Cronograma de actividades}
-\input{13_Cronograma-de-actividades}
+\input{10_Cronograma-de-actividades}
 \chapter{Limitaciones y factibilidad de la investigación}
-\input{14_Limitaciones}
+\input{11_Limitaciones}
 \chapter{Comité Propuesto}
-\input{15_Comite}
-\chapter*{Referencias}
+\input{12_Comite}
 \printbibliography[title={Referencias}]
-
-
-
-
 \end{document}
